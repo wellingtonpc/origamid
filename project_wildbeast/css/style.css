@@ -1,0 +1,20 @@
+body, p, h1, ul, li, blockquote {
+    padding: 0px;
+    margin: 0px;    
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: Vollkorn, Georgia, serif;
+}
+
+img {
+    max-width: 100px;
+}

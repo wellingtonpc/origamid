@@ -1,21 +1,51 @@
-// return all images
-const images = document.querySelectorAll('img');
-images.forEach(function(item, index){
+// const images = document.querySelectorAll('img');
+// images.forEach(function(item){
+//     console.log(item);
+// }
+// );
+
+// images.forEach((item) => {
+//     console.log(item);
+// });
+
+
+// show in console each paragrapth
+const paragrapths = document.querySelectorAll('p');
+
+paragrapths.forEach((item) => {
     console.log(item);
 });
 
-// return all images that begins with image
+// show the text inside paragrapth
+paragrapths.forEach((item) => {
+    console.log(item.textContent)
+});
 
-const imagesBeginsWith = document.querySelectorAll('img[src^="img/image"]');
-console.log(imagesBeginsWith);
+// correct this code
+// const imgs = document.querySelectorAll('img');
+
+// imgs.forEach(item, index => {
+//     console.log(item, index);
+// });
+
+// let i = 0:
+// imgs.forEach( => {
+//     console.log(i++);
+// });
+
+// imgs.forEach(() => i++);
+
+const imgs = document.querySelectorAll('img');
+
+imgs.forEach((item, index) => {
+    console.log(item, index);
+});
 
 
-// get all intern links that begins with #
-const internalLinks = document.querySelectorAll('[href^="#"]')
+let i = 0;
+imgs.forEach(() => {
+    console.log(i++);
+});
 
-// get the first h2 inside .animais-descricao
-const firstH2 = document.querySelector('.animais-descricao h2')
 
-
-// select the last <p>
-const lastP = document.querySelector('p:last-child')
+imgs.forEach(() => console.log(i++));
